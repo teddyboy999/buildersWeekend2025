@@ -1,0 +1,176 @@
+/* Modern & Unique Techy Dark Theme for Markdown Files - Tag-Based */
+
+/* Inspired by Popular Apps (e.g., Notion, Vercel, Discord) */
+:root {
+    --primary: #00a3cc; /* Muted Cyan */
+    --secondary: #d40066; /* Muted Magenta */
+    --accent: #d4b200; /* Muted Yellow */
+    --contrast: #0074cc; /* Muted Blue */
+    --highlight: #8b4fc7; /* Muted Purple */
+    --background: #1e2a44; /* Deep dark blue */
+    --text: #e6e6e6;
+    --border: #333;
+}
+
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 40px;
+}
+
+/* Headings with Neon Glow Effect */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+h1 { font-size: 2.5em; color: var(--primary); border-bottom: 3px solid var(--border); padding-bottom: 8px; }
+h2 { font-size: 2em; color: var(--secondary); border-bottom: 2px solid var(--border); padding-bottom: 6px; }
+h3 { font-size: 1.75em; color: var(--accent); }
+h4 { font-size: 1.5em; color: var(--contrast); }
+h5 { font-size: 1.25em; color: var(--highlight); }
+h6 { font-size: 1.1em; color: var(--text); opacity: 0.8; }
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Links */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary);
+    text-shadow: 0 0 10px var(--secondary);
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 1.1em;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 15px;
+    color: var(--highlight);
+    font-style: italic;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Code Blocks and Inline Code */
+pre {
+    background: #2a3755; /* Slightly lighter deep blue */
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    color: var(--text);
+    font-size: 1em;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    background: var(--secondary);
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: var(--text);
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td, th {
+    border: 1px solid var(--border);
+    padding: 12px;
+}
+
+th {
+    background: var(--highlight);
+    color: var(--background);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border);
+    margin: 25px 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 3px solid var(--primary);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Interactive Elements to Prevent Errors */
+button, select {
+    background-color: var(--contrast);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, select:hover {
+    background-color: var(--primary);
+    box-shadow: 0 0 8px rgba(0, 163, 204, 0.5);
+}
+
+select {
+    appearance: none;
+    padding-right: 24px; /* Space for dropdown arrow */
+    background-image: linear-gradient(45deg, transparent 50%, var(--text) 50%),
+                      linear-gradient(135deg, var(--text) 50%, transparent 50%);
+    background-position: calc(100% - 15px) center, calc(100% - 10px) center;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+
+button:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--secondary);
+}

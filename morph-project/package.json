@@ -1,0 +1,19 @@
+{
+  "name": "morph-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build -w .morph/frontend"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "@tailwindcss/vite": "^4.0.8",
+    "papaparse": "^5.5.2",
+    "react-resizable": "^3.0.5",
+    "tailwindcss": "^4.0.8"
+  },
+  "workspaces": [
+    ".morph/frontend"
+  ]
+}
