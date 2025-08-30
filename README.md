@@ -2,9 +2,6 @@
 
 A predictive inventory management system developed for Builders Weekend 2025. This application functions as a CRM and stock management tool that forecasts ideal restock dates for inventory items.
 
-[![Build Status](https://img-shields.io/badge/build-passing-brightgreen)](https://github.com/teddyboy999/buildersWeekend2025.git)
-[![License: MIT](https://img-shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 ## Table of Contents
 
 - [About The Project](#about-the-project)
