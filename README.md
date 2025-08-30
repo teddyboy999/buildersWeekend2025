@@ -29,7 +29,7 @@ The goal is to provide a practical and intelligent tool that helps businesses **
 - 🧠 **Predictive AI Backend**: A core AI model that trains on historical inventory data to learn item-specific sales trends and depletion rates.
 - 🔒 **Secure Database**: A private and secure system for managing user and inventory data, ensuring confidentiality.
 - 📈 **Stock Unit Management**: Tracks individual stock items to provide granular insights for the predictive model.
-- यूजर **Friendly Interface**: A simple and intuitive front end designed for ease of use, allowing users to quickly get started with managing their inventory.
+- **User Friendly Interface**: A simple and intuitive front end designed for ease of use, allowing users to quickly get started with managing their inventory.
 
 ---
 
